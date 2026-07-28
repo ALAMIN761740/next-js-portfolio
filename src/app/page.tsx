@@ -1,8 +1,12 @@
-import HeroSection from "@/section/HeroSection";
+import AboutSection from "@/sections/AboutSection";
+import HeroSection from "@/sections/HeroSection";
 
 
 export default function Home() {
   return (
-    <HeroSection></HeroSection>
+    <>
+      <HeroSection></HeroSection>
+      <AboutSection></AboutSection>
+    </>
   );
 }
