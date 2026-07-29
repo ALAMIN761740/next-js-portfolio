@@ -1,3 +1,4 @@
+import SectionHeader from "@/components/ui/SectionHeader"
 
 
 
@@ -42,6 +43,23 @@ const projects = [
 
 export default function ProjectSection() {
     return (
-        <div>ProjectSection</div>
+        <section id="projects" className="relative py-24">
+            {/* Background Glow */}
+            <div className="pointer-events-none absolute left-1/2 top-1/4 h-80 w-80 -translate-x-1/2 rounded-full bg-primary/10 blur-3xl" />
+
+            <div className="container mx-auto px-6">
+                <SectionHeader
+                    badge="Projects"
+                    title="Some of my recent"
+                    highlight="work"
+                    description="A selection of projects showcasing my ability to design, build, and scale modern full-stack applications."
+                />
+
+                {/* Projects Grid */}
+                <div className="mt-16">
+                    {/* Your project cards go here */}
+                </div>
+            </div>
+        </section>
     )
 }
