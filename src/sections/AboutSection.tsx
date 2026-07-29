@@ -14,7 +14,7 @@ export default function AboutSection() {
 
                 {/* Left Side */}
                 <div className="flex justify-center lg:justify-start">
-                    <div className="relative flex items-center justify-center w-85 h-85 md:w-[30rem] md:h-[30rem] rounded-2xl border border-border bg-surface/80 backdrop-blur-md">
+                    <div className="relative flex items-center justify-center w-85 h-85 md:w-120 md:h-120 rounded-2xl border border-border bg-surface/80 backdrop-blur-md">
 
                         <div
                             aria-hidden="true"
