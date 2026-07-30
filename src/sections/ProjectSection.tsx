@@ -1,3 +1,4 @@
+import ProjectCard from "@/components/project/ProjectCard"
 import SectionHeader from "@/components/ui/SectionHeader"
 
 
@@ -47,18 +48,20 @@ export default function ProjectSection() {
             {/* Background Glow */}
             <div className="pointer-events-none absolute left-1/2 top-1/4 h-80 w-80 -translate-x-1/2 rounded-full bg-primary/10 blur-3xl" />
 
-            <SectionHeader
-                badge="Projects"
-                title="Some of my recent"
-                highlight="work"
-                description="A selection of projects showcasing my ability to design, build, and scale modern full-stack applications."
-            />
+            <div className="w-[90%] max-w-6xl mx-auto space-y-12">
+                <SectionHeader
+                    badge="Projects"
+                    title="Some of my recent"
+                    highlight="work"
+                    description="A selection of projects showcasing my ability to design, build, and scale modern full-stack applications."
+                />
 
-            {/* Projects Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10">
-                {projects.map((project, index) => (
-                    <p>{project.title}</p>
-                ))}
+                {/* Projects Grid */}
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10">
+                    {projects.map((project, index) => (
+                        <ProjectCard {...project} key={index} />
+                    ))}
+                </div>
             </div>
         </section>
     )

@@ -1,4 +1,6 @@
 import Image from "next/image";
+import Link from "next/link";
+import { LuExternalLink, LuGithub } from "react-icons/lu";
 
 interface ProjectCardProps {
     title: string,
@@ -35,6 +37,22 @@ export default function ProjectCard({ title, description, liveURL, githubURL, im
                             {tag}
                         </span>
                     ))}
+                </div>
+
+                {/* links */}
+                <div className="flex items-center gap-4 pt-3">
+                    {liveURL && (
+                        <Link href={liveURL} target="_blank" className="flex items-center gap-1 text-sm text-text-muted hover:text-primary transition">
+                            <LuExternalLink className="w-4 h-4" />
+                            Live
+                        </Link>
+                    )}
+                    {githubURL && (
+                        <Link href={githubURL} target="_blank" className="flex items-center gap-1 text-sm text-text-muted hover:text-primary transition">
+                            <LuGithub className="w-4 h-4" />
+                            GitHub
+                        </Link>
+                    )}
                 </div>
             </div>
         </div>
