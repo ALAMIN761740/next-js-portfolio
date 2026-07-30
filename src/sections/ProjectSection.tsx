@@ -47,18 +47,18 @@ export default function ProjectSection() {
             {/* Background Glow */}
             <div className="pointer-events-none absolute left-1/2 top-1/4 h-80 w-80 -translate-x-1/2 rounded-full bg-primary/10 blur-3xl" />
 
-            <div className="container mx-auto px-6">
-                <SectionHeader
-                    badge="Projects"
-                    title="Some of my recent"
-                    highlight="work"
-                    description="A selection of projects showcasing my ability to design, build, and scale modern full-stack applications."
-                />
+            <SectionHeader
+                badge="Projects"
+                title="Some of my recent"
+                highlight="work"
+                description="A selection of projects showcasing my ability to design, build, and scale modern full-stack applications."
+            />
 
-                {/* Projects Grid */}
-                <div className="mt-16">
-                    {/* Your project cards go here */}
-                </div>
+            {/* Projects Grid */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10">
+                {projects.map((project, index) => (
+                    <p>{project.title}</p>
+                ))}
             </div>
         </section>
     )
