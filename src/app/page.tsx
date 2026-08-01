@@ -1,5 +1,8 @@
+
 import AboutSection from "@/sections/AboutSection";
+import DevelopmentJourney from "@/sections/DevelopmentJourney";
 import HeroSection from "@/sections/HeroSection";
+import JourneySection from "@/sections/JourneySection";
 import ProjectSection from "@/sections/ProjectSection";
 
 
@@ -9,6 +12,9 @@ export default function Home() {
       <HeroSection></HeroSection>
       <AboutSection></AboutSection>
       <ProjectSection></ProjectSection>
+      {/* <DevelopmentJourney></DevelopmentJourney> */}
+      {/* E */}
+      <JourneySection></JourneySection>
     </>
   );
 }
