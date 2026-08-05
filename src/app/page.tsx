@@ -1,5 +1,6 @@
 
 import AboutSection from "@/sections/AboutSection";
+import ContactSection from "@/sections/ContactSection";
 import DevelopmentJourney from "@/sections/DevelopmentJourney";
 import HeroSection from "@/sections/HeroSection";
 import JourneySection from "@/sections/JourneySection";
@@ -15,6 +16,7 @@ export default function Home() {
       {/* <DevelopmentJourney></DevelopmentJourney> */}
       {/* E */}
       <JourneySection></JourneySection>
+      <ContactSection></ContactSection>
     </>
   );
 }
